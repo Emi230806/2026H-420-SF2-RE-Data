@@ -21,8 +21,8 @@ class File:
 
     def est_vide(self) -> bool:
         """Methode qui evalue si une base de donnée File est "vide"."""
-        if self.base_de_donnee[self.index_tete]: #On regarde juste s'il y a un élément a l'index_tete, 
-            return False                         #Sinon c'est que la File est "vide"
+        if len(self.base_de_donnee) >= self.index_tete: 
+            return False                      
         else:
             return True
             
